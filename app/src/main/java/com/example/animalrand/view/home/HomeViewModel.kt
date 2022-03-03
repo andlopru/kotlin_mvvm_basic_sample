@@ -1,7 +1,5 @@
 package com.example.animalrand.view.home
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.animalrand.model.data.AnimalListItem
@@ -18,6 +16,8 @@ class HomeViewModel @Inject constructor(
     init {
         getAnimals()
     }
+
+//TODO:Add liveData to listen for changes on Repo data
 
     private fun getAnimals(){
         viewModelScope.launch{

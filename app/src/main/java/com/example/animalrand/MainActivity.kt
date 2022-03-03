@@ -16,9 +16,6 @@ import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
 
-//    @Inject
-//    lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,5 +38,4 @@ class MainActivity : DaggerAppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-//    override fun androidInjector() = dispatchingAndroidInjector
 }
